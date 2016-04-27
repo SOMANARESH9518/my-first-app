@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    </head>
+    <body>
+        <p align='center'>
+          <font size='10',color='blue'>
+                <b>Welcome to My site</b>
+                <br><br>
+                <img src='http://p.imgci.com/db/PICTURES/CMS/222900/222915.jpg' alt="My Favorite Batsman" style="width:304px;height:400px;">
+                <br><br>
+                My Favorite Batsman
+                <br><br>
+                Follow me at <a href='http://www.facebook.com/somanaresh9518'><u>Facebook</u></a>
+				<br><br>
+				Follow me at <b><a href='https://twitter.com/NARESH9518'><u>Twitter</u></a>
+				{% for post in posts %}
+                <div>
+                    <p>published: {{ post.published_date }}</p>
+                    <h1><a href="">{{ post.title }}</a></h1>
+                    <p>{{ post.text|linebreaks }} </p>
+                    Hello World
+                </div>
+{% endfor %}
+          </font>
+        <p>
+    </body>
+
+</html>
